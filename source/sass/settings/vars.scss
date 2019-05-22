@@ -5,13 +5,15 @@ $tablets: 768px;
 $phones: 480px;
 $small-phones: 375px;
 //colors
-$grey: #ccc;
-$white: #f5f5f5;
-$black: #000;
+$grey: #7A8F99;
+$white: #fff;
+$green: #20A86B;
+$red: #e15433;
+$bg-color: #0b172a;
 //base
 $container: 1170px;
-$base-font: "Roboto", sans-serif;
-$base-size: 35px;
+$base-font: 'Open Sans', sans-serif;
+$base-size: 16px;
 $base-line: 1.42;
 $base-color: $grey;
-$base-bg: $white;
+$base-bg: $bg-color;
