@@ -21,6 +21,7 @@
         &:checked + .controls__radio-fake{
             background-color: transparent;
             border: 2px solid $green;
+            color: $white;
         }
     }
     &__radio-fake{

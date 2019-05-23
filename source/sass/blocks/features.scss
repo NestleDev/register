@@ -1,7 +1,8 @@
 .features{
     &__item{
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
+        padding-left: 4px;
         &:last-child{
             margin-bottom: 0;
         }
@@ -15,6 +16,7 @@
             height: 14px;
             background-image: url('../images/icons/check.png');
             margin-right: 19px;
+            margin-top: 5px;
         }
     }
 }

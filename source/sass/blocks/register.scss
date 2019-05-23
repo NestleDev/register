@@ -1,3 +1,15 @@
 .register{
     padding-top: 16px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include phones{
+            flex-direction: column-reverse;
+        }
+    }
+    
+    @include phones{
+        padding-bottom: 20px;
+    }
 }

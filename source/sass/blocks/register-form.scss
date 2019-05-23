@@ -9,6 +9,8 @@
         margin-bottom: 24px;
         .register-form__info{
             max-width: 128px;
+            padding-left: 1px;
+            padding-top: 1px;
         }
     }
 
@@ -18,7 +20,7 @@
     }
 
     &__control{
-        margin-bottom: 33px;
+        margin-bottom: 23px;
     }
 
     &__notifications{
@@ -27,6 +29,6 @@
 
     &__btn{
         width: 100%;
-        padding: 16px 0;
+        padding: 19px 0;
     }
 }

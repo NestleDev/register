@@ -5,7 +5,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 24px;
+        left: 26px;
         transition: .5s;
         cursor: pointer;
     }
@@ -18,12 +18,12 @@
         color: $white;
         cursor: pointer;
         &:focus + span, &:valid + span{
-            top: 12px;
+            top: 9px;
             transform: translateY(0);
             font-size: 12px;
             cursor: initial;
         }
-        &:focus{
+        &:focus, &:valid{
             border-color: $green;
             cursor: initial;
         }
@@ -51,4 +51,10 @@
             transform: translateX(-50%);
         }
     } 
+    &_error &__error{
+        display: block;
+    }
+    &_error &__input{
+        border-color: $red;
+    }
 }

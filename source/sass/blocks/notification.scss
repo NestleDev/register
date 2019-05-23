@@ -13,9 +13,12 @@
         background-image: url('../images/icons/attention.png');
         background-size: contain;
         background-repeat: no-repeat;
-        margin-right: 23px;
+        margin-right: 25px;
     }
     span{
         flex: 1;
+    }
+    &_success{
+        background-color: $green;
     }
 }

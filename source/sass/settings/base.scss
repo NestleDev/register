@@ -12,6 +12,13 @@ body {
   background: url('../images/frontal-black.png') 66% 63% / 13%, url('../images/dark.png') center right, $base-bg;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
+  @include tablets{
+    background: url('../images/frontal-black.png') 70% 52% / 13%, url('../images/dark.png') center right / 38%, $base-bg;
+    background-repeat: no-repeat;
+  }
+  @include phones{
+    background: $base-bg;
+  }
 }
 
 ul {
@@ -75,9 +82,4 @@ textarea {
   width: 95%;
   max-width: $container;
   margin: 0 auto;
-  &_between{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
 }
