@@ -1,0 +1,14 @@
+.title{
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: $white;
+    &::before{
+        content: '';
+        display: block;
+        width: 140px;
+        height: 16px;
+        background-color: $white;
+        margin-bottom: 28px;
+    }
+}

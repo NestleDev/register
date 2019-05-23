@@ -1,0 +1,47 @@
+.controls{
+    flex: .95;
+    display: flex;
+    &__label{
+        position: relative;
+        flex: 1;
+        &:first-child .controls__radio-fake{
+            border-radius: 4px 0 0 4px;
+            &::before{
+                display: none;
+            }
+        }
+        &:last-child .controls__radio-fake{
+            border-radius: 0 4px 4px 0;
+        }
+    }
+    &__radio{
+        position: absolute;
+        top: 0;
+        left: -9999px;
+        &:checked + .controls__radio-fake{
+            background-color: transparent;
+            border: 2px solid $green;
+        }
+    }
+    &__radio-fake{
+        display: flex;
+        width: 100%;
+        background-color: rgba($color-field, .1);
+        height: 100%;
+        cursor: pointer;
+        justify-content: center;
+        padding: 2px 0;
+        position: relative;
+        &::before{
+            content: '';
+            display: block;
+            width: 2px;
+            height: 70%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #1a2738;
+        }
+    }
+}

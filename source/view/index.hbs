@@ -18,7 +18,62 @@
 
 <body>
     <div class="wrapper">
-        'Hello World'
+        <section class="register">
+            <div class="container container_between">
+                <main class="maincontent">
+                    <h1 class="title maincontent__title">Начните тороговать прямо сейчас</h1>
+                    <div class="features maincontent__features">
+                        <ul class="features__list">
+                            <li class="features__item"><span>Нет спреда — торгуйте с прозрачными
+                                    и точными котировками</span></li>
+                            <li class="features__item"><span>Достаточно депозита в $10, чтобы начать торговать</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="#" class="register-form">
+                        <label class="field register-form__input">
+                            <input type="email" name="email" class="field__input" required>
+                            <span class="field__placeholder">Ваш e-mail</span>
+                            <span class="field__error">Неверный формaт email</span>
+                        </label>
+                        <label class="field register-form__input">
+                            <input type="password" name="password" class="field__input" required>
+                            <span class="field__placeholder">Придумайте пароль</span>
+                            <span class="field__error">Неверный пароль</span>
+                        </label>
+                        <div class="register-form__currency">
+                            <span class="register-form__info">Валюта для ввода и вывода средств</span>
+                            <div class="controls">
+                                <label class="controls__label">
+                                    <input type="radio" name="currency" value="P" class="controls__radio" checked>
+                                    <span class="controls__radio-fake">P</span>
+                                </label>
+                                <label class="controls__label">
+                                    <input type="radio" name="currency" value="S" class="controls__radio">
+                                    <span class="controls__radio-fake">S</span>
+                                </label>
+                                <label class="controls__label">
+                                    <input type="radio" name="currency" value="E" class="controls__radio">
+                                    <span class="controls__radio-fake">E</span>
+                                </label>
+                            </div>
+                        </div>
+                        <label class="control register-form__control">
+                            <input type="checkbox" name="agreement" value="yes" class="control__checkbox">
+                            <span class="control__checkbox-fake"></span>
+                            <span class="register-form__info">Я совершеннолетний, ознакомился и принимаю соглашение об
+                                оказании услуг.</span>
+                        </label>
+                        <div class="register-form__notifications">
+                            <div class="notification"><span>Учётная запись с указанным e-mail уже существует</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn_green register-form__btn">Зарегистрироваться</button>
+                    </form>
+                </main>
+                <button class="btn btn_login">Войти</button>
+            </div>
+        </section>
     </div>
     <!-- inject:js -->
     <!-- endinject -->

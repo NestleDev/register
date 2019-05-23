@@ -1,0 +1,36 @@
+.control{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__checkbox{
+        position: absolute;
+        top: 0;
+        left: -9999px;
+        &:checked + .control__checkbox-fake::before{
+            opacity: 1;
+        }
+    }
+    &__checkbox-fake{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: rgba($color-field, .1);
+        border-radius: 4px;
+        margin-right: 16px;
+        &::before{
+            content: '';
+            display: block;
+            width: 18px;
+            height: 14px;
+            background-image: url('../images/icons/check.png');
+            background-size: contain;
+            opacity: 0;
+            transition: .5s;
+        }
+    }
+    .register-form__info{
+        flex: 1;
+    }
+}

@@ -1,0 +1,21 @@
+.notification{
+    display: flex;
+    align-items: center;
+    background-color: $red;
+    padding: 8px 24px;
+    color: $white;
+    border-radius: 4px;
+    &::before{
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+        background-image: url('../images/icons/attention.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 23px;
+    }
+    span{
+        flex: 1;
+    }
+}

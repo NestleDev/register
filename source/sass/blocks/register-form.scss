@@ -1,0 +1,32 @@
+.register-form{
+    &__input{
+        margin-bottom: 16px;
+    }
+
+    &__currency{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .register-form__info{
+            max-width: 128px;
+        }
+    }
+
+    &__info{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__control{
+        margin-bottom: 33px;
+    }
+
+    &__notifications{
+        margin-bottom: 16px;
+    }
+
+    &__btn{
+        width: 100%;
+        padding: 16px 0;
+    }
+}
