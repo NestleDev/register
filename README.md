@@ -9,4 +9,4 @@
 
 ## Authors
 
-* **Alexander Nesvit** - *test work* - [NestleDev](https://github.com/NestleDev)
+* **Alexander Nesvit** - *test work* - [ссылка на демо](https://nestledev.github.io/register/dist/.)
